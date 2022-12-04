@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.container{
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+.grid{
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.img img{
+    border-radius: 15px;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-name{
+    color: hsl(218, 44%, 22%);
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.main-des{
+    color: hsl(220, 15%, 55%);
+    font-size: 24px;
+}
+
+@media only screen and (max-width:540px){
+    .main{
+        padding: 15px;
+    }
+    .main-name{
+        font-size: 25px;
+    }
+    .main-des{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:425px){
+    .grid{
+        padding: 15px;
+    }
+    .main{
+        padding: 13px;
+    }
+    .main-name{
+        font-size: 22px;
+    }
+    .main-des{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:375px){
+    .main{
+        padding: 10px;
+    }
+    .main-name{
+        font-size: 20px;
+    }
+    .main-des{
+        font-size: 15px;
+    }
+}
